@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background: white;
+    font-family: 'Work Sans';
+
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+header {
+    background: #D7EADF;
+
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 23px;
+
+
+}
+
+.navlink {
+    color: #0D4C38;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    
+}
+
+.navlink:hover{
+    color: #295547;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
