@@ -5,29 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link href="css/style-index.css" rel="stylesheet">
     <title>WYDY</title>
 </head>
 
 <body>
-    
+
+<!-- NAV BAR -->
     <header>
         <div class="container">
 
             <img src ="img/placeholder logo.png" alt="placeholder logo" class="logo">
 
-            <nav>
-                <ul>
-                    <li><a href="#" class="navlink"> Home </a> </li>
-                    <li><a href="#" class="navlink"> Study </a> </li>
-                    <li><a href="#" class="navlink"> Careers </a> </li>
-                    <li><a href="#" class="navlink"> Ask </a> </li>
-                    <li><a href="#" class="navlink"> search </a> </li>
-                </ul>
-            </nav>
+<!-- NAV ELEMENTS -->
 
-        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" class="navlink"> Home </a> </li>
+                <li><a href="#" class="navlink"> Study </a> </li>
+                <li><a href="#" class="navlink"> Careers </a> </li>
+                <li><a href="#" class="navlink"> Ask </a> </li>
+                <li>
+
+<!-- SEARCH BOX -->
+                    <form id="searchInfo" role="search" class="search-box">
+                        <div class="search-box__input-container">
+                            <input class="search-box__input" type="search" id="query" name="q" placeholder="Search here..." aria-label="Search through site content"> 
+                            <button><i class="material-icons instant-search__icon">search</i></button>
+                        </div>
+
+
+                    </form>
+
+
+                </li>
+                
+            </ul>
+        </nav>
+
+    </div>
 
     </header>
 </body>

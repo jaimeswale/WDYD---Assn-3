@@ -4,6 +4,7 @@ body {
     font-family: 'Work Sans';
 
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -42,7 +43,9 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 60px;
-    padding-top: 23px;
+    padding-top: 30px;
+
+    position: relative;
 
 
 }
@@ -59,6 +62,89 @@ nav li {
 .navlink:hover{
     color: #295547;
     text-decoration: underline;
-    font-weight: 600;
+    
 }
+
+.navlink::before {
+    content: '';
+    display: block;
+    height: 5px;
+    
+    background-color: #295547;
+
+    position: absolute;
+    width: 0%;
+    top: 0;
+
+    transition: all ease-in-out 200ms;
+}
+
+.navlink:hover::before{
+    width: 100%;
+    top: 0;
+}
+
+
+
+
+/* -- SEARCH BOX CSS -- */
+
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+
+.search-box {
+    position: relative;
+    max-width: 250px;
+}
+
+.search-box, 
+.search-box__input {
+    font-family: Work Sans;
+    font-weight: 400;
+}
+
+.search-box, 
+.search-box__input * {
+    transition:  background 0.15s, box-shadow 0.15s;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.search-box__input {
+    border-radius: 20px;
+    
+}
+
+
+.search-box__input-container {
+    border-radius: 5px;
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px;
+    background: #FFFFFF;
+}
+
+.search-box__input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    width:100%;
+    padding: 0 6px;
+    background: transparent;
+}
+
+
 
