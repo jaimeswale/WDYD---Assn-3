@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    background: white;
+    font-family: 'Work Sans';
+    font-size: 18px;
+}
+/*NAVBAR*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+header {
+    background: #D7EADF;
+
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 30px;
+
+    position: relative;
+
+
+}
+
+.navlink {
+    color: #0D4C38;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    
+}
+
+.navlink:hover{
+    color: #295547;
+    text-decoration: underline;
+    
+}
+
+.navlink::before {
+    content: '';
+    display: block;
+    height: 5px;
+    
+    background-color: #295547;
+
+    position: absolute;
+    width: 0%;
+    top: 0;
+
+    transition: all ease-in-out 200ms;
+}
+
+.navlink:hover::before{
+    width: 100%;
+    top: 0;
+}
+
+/* -- SEARCH BOX CSS -- */
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.search-box {
+    position: relative;
+    max-width: 250px;
+}
+
+.search-box, 
+.search-box__input {
+    font-family: Work Sans;
+    font-weight: 400;
+}
+
+.search-box, 
+.search-box__input * {
+    transition:  background 0.15s, box-shadow 0.15s;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.search-box__input {
+    border-radius: 20px;
+    
+}
+
+.search-box__input-container {
+    border-radius: 5px;
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px;
+    background: #FFFFFF;
+}
+
+.search-box__input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    width:100%;
+    padding: 0 6px;
+    background: transparent;
+}
+
+
+
+/***********MAIN GRID***********/
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'main main main right right'
+    'footer footer footer footer footer';
+  grid-gap: 30px;
+  background-color: #F2F2F2;
+  padding: 50px 150px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.item1{
+font-family: Montserrat;
+color: #376F4E;
+font-weight: 800;
+font-size: 96px;
+background: url('img/StudyPathBackdropImage.jpg') no-repeat center 100px;
+}
+
+.item4{
+padding: 200px;
+}
+
+.itemhead{
+    font-family: 'Work Sans', sans-serif;
+    color:#376F4E;
+    font-weight: 600;
+    font-size: 36px;
+    text-decoration: underline;
+
+}
+
+.itemheadright{
+    font-family: 'Work Sans', sans-serif;
+    color:#376F4E;
+    font-weight: 600;
+    font-size: 36px;
+    text-decoration: underline;
+    text-align: left;
+
+}
+
+.quote{!important
+    font-family: 'Montserrat', sans-serif;
+    color:#376F4E;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 0px 150px 50px 150px;
+    line-height: 25px;
+    text-align: center;
+}
+
+p{
+    padding: 1px 50px 10px 50px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.careerslist{
+    list-style-type: none;
+    text-align: left;
+    line-height: 60px;
+}
+
+.careers:hover{
+    color: #295547;
+    font-weight: bold;
+    text-decoration: underline;
+}
