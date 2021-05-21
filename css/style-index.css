@@ -1,19 +1,8 @@
 body {
     margin: 0;
+    background: white;
     font-family: 'Work Sans';
 
-}
-
-.divider {
-    display: inline-block;
-    width: 30px;
-    height: 20px;
-    border-right: 3px solid #737A84;
-    z-index: 1;
-    color: black;
-    position: relative;
-    top: 10%;
-    left: 2%;
 }
 
 .container {
@@ -96,76 +85,6 @@ nav li {
 }
 
 
-/* -- HEADER TEXT STYLING -- */
-
-.top-heading {
-    
-    width: 100%;
-    height: 50%;
-    position: relative;
-    top: 15%;
-  
-
-}
-
-.blackMonst {
-    font-size: 50px;
-    text-align: center;
-    font-family: Montserrat;
-    font-weight: 600;
-    color: #4C3B4D;
-    height: 90px;
-
-
-}
-
-.greenMonst {
-    font-size: 50px;
-    text-align: center;
-    font-family: Montserrat;
-    font-weight: 700;
-    color: #0D4C38;
-    height: 90px;
-   
-
-}
-
-/* -- PARAGRAPH TEXT STYLING -- */
-
-p {
-    font-family: Montserrat;
-    text-align: justify;
-    padding-left: 6%;
-    padding-right: 6%;
-    font-size: 14px;
-    font-weight: 400;
-
-}
-
-p strong {
-    color: #0D4C38;
-    font-family: Montserrat;
-    text-align: justify;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-
-
-}
-
-/* -- BOTTOM TEXT STYLING -- */
-
-p.bottom-text{
-    color: #0D4C38;
-    font-family: Montserrat;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-
-}
-
-
 
 
 /* -- SEARCH BOX CSS -- */
@@ -227,87 +146,5 @@ button {
     background: transparent;
 }
 
-
-/* -- GRID CSS -- */
-
-.box {
-
-    display: grid;
-    gap: 1rem;
-    /* grid-auto-rows: 100px; */
-    grid-template-columns: 600px 500px;
-    grid-template-rows: 180px 120px 240px 60px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 4%;
-    border: 10px solid #D7EADF;
-    border-radius: 10px;
-
-
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1;
-    background-color: white;
-    width: 100%;
-    height: 100%;
-
-
-}
-
-/* -- GRID SEARCH BOX -- */
-
-
-.home-search-box {
-    position: relative;
-    width: 500px;
-    margin-left: 8%;
-    margin-right: 8%;
-}
-
-.home-search-box, 
-.home-search-box__input {
-    font-family: Work Sans;
-    font-weight: 400;
-}
-
-.home-search-box, 
-.home-search-box__input * {
-    transition:  background 0.15s, box-shadow 0.15s;
-}
-
-.home-search-box:focus-within {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-.home-search-box__input {
-    border-radius: 20px;
-    
-}
-
-
-.home-search-box__input-container {
-    border-radius: 5px;
-    display: inline-flex;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 6px;
-    background: #FFFFFF;
-}
-
-.home-search-box__input {
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    width:100%;
-    padding: 0 6px;
-    background: transparent;
-}
 
 
