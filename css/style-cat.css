@@ -280,9 +280,9 @@ aside:nth-of-type(2) {
     font-size: 20px;
 }
 
-/* .box {
-    display: block;
-} */
+.box {
+    overflow: hidden;
+}
 
 section:nth-of-type(1) {
     grid-area: section1;
@@ -322,8 +322,15 @@ section h1 {
     width: 415px;
     color: #0D4C38;
     font-size: 20px;
+    overflow: hidden;
+    margin: 0 auto;
     
 }
+
+.box h1 {
+    margin: 0 auto;
+}
+
 
 .two {
     grid-area: two;
