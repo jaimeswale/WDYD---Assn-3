@@ -45,7 +45,7 @@ toggleBtn3.addEventListener('click', () => {
 })
 
 toggleBtn3.addEventListener("click", function(){
-    let elem = document.getElementsByClassName("box-grid");
+    let elem = document.getElementsByClassName("grid-box");
     elem.style.gridTemplateAreas = 
         '"aside1 heading heading heading aside2" "aside1 section1 section1 section1 aside2" "aside1 section3 section3 section3 aside2" "aside1 section4 section4 section4 aside2" "aside1 section5 section5 section5 aside2"';
         
