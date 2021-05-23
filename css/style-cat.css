@@ -493,13 +493,13 @@ section:nth-of-type(5) {
 }
 
 #science {
-    display: block;
+    display: inline-block;
 }
 
 .architecture {
-    display: block;
+    display: inline-block;
 }
 
 .design {
-    display: block;
+    display: inline-block;
 }
