@@ -1,13 +1,13 @@
 const toggleBtn1 = document.querySelector("#toggleBtn1");
-const divList1 = document.querySelector("#science");
+const divList1 = document.querySelector(".science");
 
 toggleBtn1.addEventListener('click', () => {
-    if(divList1.style.display === 'none') {
-        toggleBtn1.value = "HIDE SCIENCE";
-        divList1.style.display = 'inline-block';
+    if(divList1.style.visibility === 'hidden') {
+        toggleBtn1.value = "HIDE ENGINEERING";
+        divList1.style.visibility = 'visible';
     } else {
-        toggleBtn1.value = "SHOW SCIENCE";
-        divList1.style.display = 'none';
+        toggleBtn1.value = "SHOW ENGINEERING";
+        divList1.style.visibility = 'hidden';
     }
 })
 
@@ -16,12 +16,12 @@ const divList2 = document.querySelectorAll(".architecture");
 
 toggleBtn2.addEventListener('click', () => {
     for(var i = 0; i < divList2.length; i++) {
-        if(divList2[i].style.display === 'none') {
+        if(divList2[i].style.visibility === 'hidden') {
             toggleBtn2.value = "HIDE ARCHITECTURE"
-            divList2[i].style.display = 'inline-block';
+            divList2[i].style.visibility = 'visible';
         } else {
             toggleBtn2.value = "SHOW ARCHITECTURE"
-            divList2[i].style.display = 'none';
+            divList2[i].style.visibility = 'hidden';
         }
     }
 
@@ -32,27 +32,50 @@ const divList3 = document.querySelectorAll(".design");
 
 toggleBtn3.addEventListener('click', () => {
     for(var i = 0; i < divList3.length; i++) {
-        if(divList3[i].style.display === 'none') {
+        if(divList3[i].style.visibility === 'hidden') {
             toggleBtn3.value = "HIDE DESIGN"
-            divList3[i].style.display = 'inline-block';
+            divList3[i].style.visibility = 'visible';
         } else {
             toggleBtn3.value = "SHOW DESIGN"
-            divList3[i].style.display = 'none';
+            divList3[i].style.visibility = 'hidden';
 
         }
     }
 
 })
 
-toggleBtn3.addEventListener("click", function(){
-    let elem = document.getElementsByClassName("grid-box");
-    elem.style.gridTemplateAreas = 
-        '"aside1 heading heading heading aside2" "aside1 section1 section1 section1 aside2" "aside1 section3 section3 section3 aside2" "aside1 section4 section4 section4 aside2" "aside1 section5 section5 section5 aside2"';
-        
-        
-        
-        
-        
+function search_filter() {
+  let input = document.getElementById('query').value
+  input = input.toLowerCase();
+  let x = document.getElementsByClassName('design');
+  let y = document.getElementsByClassName('architecture');
+  let z = document.getElementsByClassName('science');
 
-})
+  for (let i = 0; i < x.length; i++) {
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+      x[i].style.visibility="hidden";
+    }
+    else {
+      x[i].style.visbility = "visible";
+    }
+  }
+
+  for (let i = 0; i < y.length; i++) {
+    if (!y[i].innerHTML.toLowerCase().includes(input)) {
+      y[i].style.visibility="hidden";
+    }
+    else {
+      y[i].style.visibility = "visible";
+    }
+  }
+
+  for (let i = 0; i < z.length; i++) {
+    if (!z[i].innerHTML.toLowerCase().includes(input)) {
+      z[i].style.visibility="hidden";
+    }
+    else {
+      z[i].style.visibility = "visible";
+    }
+  }
+}
 
