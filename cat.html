@@ -17,7 +17,7 @@
 <header>
 <div class="container">
 
-        <img src ="img/placeholder logo.png" alt="placeholder logo" class="logo">
+        <img src ="img/pageLogo.png" alt="placeholder logo" class="logo">
 
 <!-- NAV ELEMENTS -->
 
@@ -36,7 +36,7 @@
 <!-- SEARCH BOX -->
                 <form id="searchInfo" role="search" class="search-box">
                     <div class="search-box__input-container">
-                        <input class="search-box__input" type="search" id="query" name="q" placeholder="Search here..." aria-label="Search through site content"> 
+                        <input class="search-box__input" type="search" id="query" name="q" onkeyup="search_filter()" placeholder="Search here..." aria-label="Search through site content"> 
                         <button><i class="material-icons instant-search__icon">search</i></button>
                     </div>
 
@@ -60,7 +60,7 @@
         <aside></aside>
         <section>
             <div class="one filter">
-                <input type="button" value="HIDE BUILDING SCIENCE" class="button-text" id="toggleBtn1">
+                <input type="button" value="HIDE ENGINEERING" class="button-text" id="toggleBtn1">
            </div>
            <div class="two filter">
             <input type="button" value="HIDE ARCHITECTURE" class="button-text" id="toggleBtn2"> 
@@ -69,85 +69,120 @@
             <input type="button" value="HIDE DESIGN" class="button-text" id="toggleBtn3">    
            </div>
         </section>
-        <section>
-            <div class="box four design">
-                    <h1>COMMUNICATION DESIGN</h1>
+        <section id="myUL">
+            <div class="box four">
+                <div class="design">
+                    <ul> <li><a href="#"><h1>COMMUNICATION DESIGN</h1></a> </li></ul>
                     <div class="images">
                         <img src="img/communication_image.jpg" width="210px">  
                     </div> 
+                </div>
+
             </div>
-            <div class="box five design">
-                    <h1> MEDIA DESIGN</h1>
+            <div class="box five">
+                <div class="design">
+                    <ul> <li><a href="#"><h1>MEDIA DESIGN</h1></a> </li></ul>
                     <div class="images">
                         <img src="img/media_image.jpg" width="210px">  
                     </div>
+                </div>
+
+            </div>
+            <div class="box six">
+                <div class="design">
+                    <ul> <li><a href="#"><h1>FASHION DESIGN TECHNOLOGY</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/fashion design_image.jpg" width="210px">  
+                    </div>  
+                </div>
+
+            </div> 
+        </section>
+        <section id="myUL2">
+            <div class="box seven">
+                <div class="design">
+                    <ul> <li><a href="#"><h1>INTERACTION DESIGN</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/interaction_image.jpg" width="210px">  
+                    </div> 
+                </div>
+
+            </div>
+            <div class="box eight">
+                <div class="design">
+                    <ul> <li><a href="#"><h1>DESIGN FOR SOCIAL INNOVATION</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/social innovation_image.jpg" width="210px">  
+                    </div> 
+                </div>
  
             </div>
-            <div class="box six design">
-                <h1> FASHING DESION TECHNOLOGY</h1>
-                <div class="images">
-                    <img src="img/fashion design_image.jpg" width="210px">  
-                </div>  
+            <div class="box nine">
+                <div class="design">
+                    <ul> <li><a href="#"><h1>ANIMATION AND VISUAL EFFECTS</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/animation_image.jpg" width="210px">  
+                    </div>  
+                </div>
+
             </div> 
         </section>
-        <section>
-            <div class="box seven design">
-                <h1> INTERACTION DESIGN</h1> 
-                <div class="images">
-                    <img src="img/interaction_image.jpg" width="210px">  
-                </div> 
+        <section id="myUL3">
+            <div class="box ten">
+                <div class="design">
+                    <ul> <li><a href="#"><h1>INDUSTRIAL DESIGN</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/industrial_image.jpg" width="210px">  
+                    </div>  
+                </div>
+
             </div>
-            <div class="box eight design">
-                <h1> DESIGN FOR SOCIAL INNOVATION</h1>
-                <div class="images">
-                    <img src="img/social innovation_image.jpg" width="210px">  
-                </div>  
+            <div class="box eleven">
+                <div class="architecture">
+                    <ul> <li><a href="#"><h1>ARCHITECTURE HISTORY</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/architecture_image.jpg" width="210px">  
+                    </div> 
+                </div>
+ 
             </div>
-            <div class="box nine design">
-                <h1> ANIMATION AND VISUAL EFFECTS</h1>
-                <div class="images">
-                    <img src="img/animation_image.jpg" width="210px">  
-                </div>  
+            <div class="box twelve">
+                <div class="architecture">
+                    <ul> <li><a href="#"><h1>INTERIOR ARCHITECTURE</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/interior architecture_image.jpg" width="210px">  
+                    </div>  
+                </div>
+
             </div> 
         </section>
-        <section>
-            <div class="box ten design">
-                <h1> INDUSTRIAL DESIGN</h1>
-                <div class="images">
-                    <img src="img/industrial_image.jpg" width="210px">  
-                </div>  
+        <section id="myUL4">
+            <div class="box thirteen">
+                <div class="architecture">
+                    <ul> <li><a href="#"><h1>LANDSCAPE ARCHITECTURE</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/landscape architecture_image.jpg" width="210px">  
+                    </div> 
+                </div>
+ 
             </div>
-            <div class="box eleven architecture">
-                <h1> ARCHITECTURE HISTORY</h1>
-                <div class="images">
-                    <img src="img/architecture_image.jpg" width="210px">  
-                </div>  
-            </div>
-            <div class="box twelve architecture">
-                <h1> INTERIOR ARCHITECTURE</h1>
-                <div class="images">
-                    <img src="img/interior architecture_image.jpg" width="210px">  
-                </div>  
-            </div> 
-        </section>
-        <section>
-            <div class="box thirteen architecture">
-                <h1> LANDSCAPE ARCHITECTURE</h1>
-                <div class="images">
-                    <img src="img/landscape architecture_image.jpg" width="210px">  
-                </div>  
-            </div>
-            <div class="box fourteen architecture">
-                <h1> ARCHITECTURE</h1>
-                <div class="images">
-                    <img src="img/architecture2_image.jpg" width="210px">  
-                </div>  
+            <div class="box fourteen">
+                <div class="architecture">
+                    <ul> <li><a href="#"><h1>ARCHITECTURE</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/architecture2_image.jpg" width="210px">  
+                    </div>  
+                </div>
+
             </div>
             <div class="box fifteen" id="science">
-                <h1> SUSTAINABLE ENGINEERING SYSTEMS</h1>
-                <div class="images">
-                    <img src="img/engineering_image.jpg" width="210px">  
-                </div>  
+                <div class="science">
+                    <ul> <li><a href="#"><h1>SUSTAINABLE ENGINEERING SYSTEMS</h1></a> </li></ul>
+                    <div class="images">
+                        <img src="img/engineering_image.jpg" width="210px">  
+                    </div> 
+                </div>
+ 
             </div> 
         </section>
         

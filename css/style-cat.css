@@ -1,10 +1,135 @@
-body {
+#query {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #myUL li a {
+  
+     /* Add a border to all links */
+    /* Grey background color */
+    text-decoration: none; /* Remove default text underline */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+  
+  #myUL2 {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL2 ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #myUL2 li a {
+  
+     /* Add a border to all links */
+    /* Grey background color */
+    text-decoration: none; /* Remove default text underline */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL2 li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+  
+  
+  
+  #myUL3 {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL3 ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #myUL3 li a {
+  
+     /* Add a border to all links */
+    /* Grey background color */
+    text-decoration: none; /* Remove default text underline */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL3 li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+  
+  ul {
+    text-align: center;
+    width: 100%;
+    margin-left: -30px;
+  }
+  
+  
+  
+  #myUL4 {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL4 ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #myUL4 li a {
+  
+     /* Add a border to all links */
+    /* Grey background color */
+    text-decoration: none; /* Remove default text underline */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL4 li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+  
+  body {
     margin: 0;
     font-family: 'Work Sans';
-
-}
-
-.divider {
+  
+  }
+  
+  li {
+    text-align: center;
+  }
+  
+  .divider {
     display: inline-block;
     width: 30px;
     height: 20px;
@@ -14,112 +139,112 @@ body {
     position: relative;
     top: 10%;
     left: 2%;
-}
-
-.container {
+  }
+  
+  .container {
     width: 80%;
     margin: 0 auto;
-
-}
-
-header {
+  
+  }
+  
+  header {
     background: #D7EADF;
-
-}
-
-header::after{
+  
+  }
+  
+  header::after{
     content: '';
     display: table;
     clear: both;
-}
-
-.logo {
+  }
+  
+  .logo {
     float: left;
     padding: 10px 0;
-}
-
-nav {
+  }
+  
+  nav {
     float: right;
     
-}
-
-nav ul {
+  }
+  
+  nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     
-
-}
-
-nav li {
+  
+  }
+  
+  nav li {
     display: inline-block;
     margin-left: 60px;
     padding-top: 30px;
-
+  
     position: relative;
-
-
-}
-
-.navlink {
+  
+  
+  }
+  
+  .navlink {
     color: #0D4C38;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 22px;
     
-}
-
-.navlink:hover{
+  }
+  
+  .navlink:hover{
     color: #295547;
     text-decoration: underline;
     
-}
-
-.navlink::before {
+  }
+  
+  .navlink::before {
     content: '';
     display: block;
     height: 5px;
     
     background-color: #295547;
-
+  
     position: absolute;
     width: 0%;
     top: 0;
-
+  
     transition: all ease-in-out 200ms;
-}
-
-.navlink:hover::before{
+  }
+  
+  .navlink:hover::before{
     width: 100%;
     top: 0;
-}
-
-
-/* -- HEADER TEXT STYLING -- */
-
-.top-heading {
+  }
+  
+  
+  /* -- HEADER TEXT STYLING -- */
+  
+  .top-heading {
     
     width: 100%;
     height: 50%;
     position: relative;
     top: 15%;
   
-
-}
-
-.blackMonst {
+  
+  }
+  
+  .blackMonst {
     font-size: 50px;
     text-align: center;
     font-family: Montserrat;
     font-weight: 600;
     color: #4C3B4D;
     height: 90px;
-
-
-}
-
-.greenMonst {
+  
+  
+  }
+  
+  .greenMonst {
     font-size: 50px;
     text-align: center;
     font-family: Montserrat;
@@ -127,59 +252,59 @@ nav li {
     color: #0D4C38;
     height: 90px;
    
-
-}
-
-/* -- PARAGRAPH TEXT STYLING -- */
-
-p {
+  
+  }
+  
+  /* -- PARAGRAPH TEXT STYLING -- */
+  
+  p {
     font-family: Montserrat;
     text-align: justify;
     padding-left: 6%;
     padding-right: 6%;
     font-size: 14px;
     font-weight: 400;
-
-}
-
-p strong {
+  
+  }
+  
+  p strong {
     color: #0D4C38;
     font-family: Montserrat;
     text-align: justify;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-
-
-}
-
-/* -- BOTTOM TEXT STYLING -- */
-
-p.bottom-text{
+  
+  
+  }
+  
+  /* -- BOTTOM TEXT STYLING -- */
+  
+  p.bottom-text{
     color: #0D4C38;
     font-family: Montserrat;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
-
-}
-
-
-
-
-/* -- SEARCH BOX CSS -- */
-
-
-button {
+  
+  }
+  
+  
+  
+  
+  /* -- SEARCH BOX CSS -- */
+  
+  
+  button {
     background: none;
     border: none;
     cursor: pointer;
     width: 35px;
     height: 35px;
-}
-
-.button-text {
+  }
+  
+  .button-text {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     font-family: Montserrat;
@@ -188,66 +313,65 @@ button {
     background-color: Transparent;
     border: none;
     cursor: pointer;
-}
-
-.button-text:hover {
+  }
+  
+  .button-text:hover {
     background: #0D4C38;
     color: white;
-}
-
-
-.search-box {
+  }
+  
+  
+  .search-box {
     position: relative;
     max-width: 250px;
-}
-
-.search-box, 
-.search-box__input {
+  }
+  
+  .search-box, 
+  .search-box__input {
     font-family: Work Sans;
     font-weight: 400;
-}
-
-.search-box, 
-.search-box__input * {
-    transition:  background 0.15s, box-shadow 0.15s;
-}
-
-.search-box:focus-within {
+  }
+  
+  .search-box, 
+  .search-box__input * {
+    transition: background 0.15s, box-shadow 0.15s;
+  }
+  
+  .search-box:focus-within {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-.search-box__input {
+  }
+  
+  
+  
+  
+  .search-box__input {
     border-radius: 20px;
     
-}
-
-
-.search-box__input-container {
+  }
+  
+  
+  .search-box__input-container {
     border-radius: 5px;
     display: inline-flex;
     box-sizing: border-box;
     width: 100%;
     padding: 6px;
-    background: #FFFFFF;
-}
-
-.search-box__input {
+    background: #D7EADF;
+  }
+  
+  .search-box__input {
     flex-grow: 1;
     border: none;
     outline: none;
     width:100%;
     padding: 0 6px;
-    background: transparent;
-}
-
-.gridbox, html {
+  }
+  
+  .gridbox, html {
     height: 100vh;
-}
-
-.grid-box {
+  }
+  
+  .grid-box {
     height: 100vh;
     margin: 0;
     display: grid;
@@ -261,30 +385,30 @@ button {
         "aside1 section3 section3 section3 aside2"
         "aside1 section4 section4 section4 aside2"
         "aside1 section5 section5 section5 aside2";
-}
-
-aside:nth-of-type(1) {
+  }
+  
+  aside:nth-of-type(1) {
     grid-area: aside1;
     background-color: white;
-}
-
-aside:nth-of-type(2) {
+  }
+  
+  aside:nth-of-type(2) {
     grid-area: aside2;
     background-color: white;
-}
-
-.heading {
+  }
+  
+  .heading {
     grid-area: heading;
     background-color: white;
     text-align: center;
     font-size: 20px;
-}
-
-.box {
+  }
+  
+  .box {
     overflow: hidden;
-}
-
-section:nth-of-type(1) {
+  }
+  
+  section:nth-of-type(1) {
     grid-area: section1;
     background-color: white;
     display: grid;
@@ -293,9 +417,9 @@ section:nth-of-type(1) {
     grid-template-rows: 100%;
     grid-template-areas:
         "one two three";
-}
-
-.one {
+  }
+  
+  .one {
     grid-area: one;
     background-color: rgba(84,92,87,0.33);
     text-align: center;
@@ -303,36 +427,41 @@ section:nth-of-type(1) {
     max-width: 100%;
     border: 3px solid #0D4C38;
     border-radius: 20px;
-}
-
-section p {
+  }
+  
+  section p {
     justify-content: center;
     align-items: center;
     align-self: center;
     text-align: center;
     width: 370px;
     
-}
-
-section h1 {
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-    width: 415px;
+  }
+  
+  section h1 {
+    width: 400px;
     color: #0D4C38;
     font-size: 20px;
     overflow: hidden;
-    margin: 0 auto;
+    margin-right: 50px;
     
-}
-
-.box h1 {
+  }
+  
+  .text-heading {
+    text-align: center;
+    margin-right: 30%;
+  }
+  
+  .box h1 {
     margin: 0 auto;
-}
-
-
-.two {
+    text-align: center;
+  }
+  
+  a {
+    text-align: center;
+  }
+  
+  .two {
     grid-area: two;
     background-color: rgba(84,92,87,0.33);
     text-align: center;
@@ -340,10 +469,10 @@ section h1 {
     max-width: 100%;
     border: 3px solid #0D4C38;
     border-radius: 20px;
-}
-
-
-.three {
+  }
+  
+  
+  .three {
     grid-area: three;
     background-color: rgba(84,92,87,0.33);
     text-align: center;
@@ -351,9 +480,9 @@ section h1 {
     max-width: 100%;
     border: 3px solid #0D4C38;
     border-radius: 20px;
-}
-
-section:nth-of-type(2) {
+  }
+  
+  section:nth-of-type(2) {
     grid-area: section2;
     background-color: white;
     display: grid;
@@ -362,33 +491,33 @@ section:nth-of-type(2) {
     grid-template-rows: 100%;
     grid-template-areas:
         "four five six";
-}
-
-.four {
+  }
+  
+  .four {
     grid-area: four;
     background-color: white;
     text-align: center;
     max-width: 100%;
     box-shadow: 5px 5px #888888;
-}
-
-.five {
+  }
+  
+  .five {
     grid-area: five;
     background-color: white;
     text-align: center;
     max-width: 100%;
     box-shadow: 5px 5px #888888;
-}
-
-.six {
+  }
+  
+  .six {
     grid-area: six;
     background-color: white;
     text-align: center;
     max-width: 100%;
     box-shadow: 5px 5px #888888;
-}
-
-section:nth-of-type(3) {
+  }
+  
+  section:nth-of-type(3) {
     grid-area: section3;
     background-color: white;
     display: grid;
@@ -397,30 +526,30 @@ section:nth-of-type(3) {
     grid-template-rows: 100%;
     grid-template-areas:
         "seven eight nine";
-}
-
-.seven {
+  }
+  
+  .seven {
     grid-area: seven;
     background-color: white;
     text-align: center;
     box-shadow: 5px 5px #888888;
-}
-
-.eight {
+  }
+  
+  .eight {
     grid-area: eight;
     background-color: white;
     text-align: center;
     box-shadow: 5px 5px #888888;
-}
-
-.nine {
+  }
+  
+  .nine {
     grid-area: nine;
     background-color: white;
     text-align: center;
     box-shadow: 5px 5px #888888;
-}
-
-section:nth-of-type(4) {
+  }
+  
+  section:nth-of-type(4) {
     grid-area: section4;
     background-color: white;
     display: grid;
@@ -429,30 +558,30 @@ section:nth-of-type(4) {
     grid-template-rows: 100%;
     grid-template-areas:
         "ten eleven twelve";
-}
-
-.ten {
+  }
+  
+  .ten {
     grid-area: ten;
     background-color: white;
     text-align: center;
     box-shadow: 5px 5px #888888;
-}
-
-.eleven {
+  }
+  
+  .eleven {
     grid-area: eleven;
     background-color: white;
     text-align: center;
     box-shadow: 5px 5px #888888;
-}
-
-.twelve {
+  }
+  
+  .twelve {
     grid-area: twelve;
     background-color: white;
     text-align: center;
     box-shadow: 5px 5px #888888;
-}
-
-section:nth-of-type(5) {
+  }
+  
+  section:nth-of-type(5) {
     grid-area: section5;
     background-color: white;
     display: grid;
@@ -461,52 +590,53 @@ section:nth-of-type(5) {
     grid-template-rows: 100%;
     grid-template-areas:
         "thirteen fourteen fifteen";
-}
-
-.thirteen {
+  }
+  
+  .thirteen {
     grid-area: thirteen;
     background-color: white;
     text-align: center;
     box-shadow: 5px 5px #888888;
-}
-
-.fourteen {
+  }
+  
+  .fourteen {
     grid-area: fourteen;
     background-color: white;
     text-align: center;
     box-shadow: 5px 5px #888888;
-}
-
-.fifteen {
+  }
+  
+  .fifteen {
     grid-area: fifteen;
     background-color: white;
     text-align: center;
     box-shadow: 5px 5px #888888;
-}
-
-.heading h1 {
+  }
+  
+  .heading h1 {
     color: #0D4C38;
     font-size: 40px;
     text-align: center;
     font-family: Montserrat;
     font-weight: 700;
     color: #0D4C38;
-}
-
-.images {
+  }
+  
+  .images {
     width: 100%;
     height: 50%;
     text-align: center;
-}
-
-#science {
+  }
+  
+  #science {
     display: inline-block;
-}
-
-.architecture {
+  }
+  
+  .architecture {
     display: inline-block;
-}
-
-.design {
+  }
+  
+  .design {
     display: block;
-}
+  }
+  
