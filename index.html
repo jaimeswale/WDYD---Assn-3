@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="css/style-index.css" rel="stylesheet">
-    <title>WYDY</title>
+    <link rel="shortcut icon" href="img/pageLogo2.png" type="image/x-icon">
+    <title>WDYD - Home Page</title>
 </head>
 
 <body>
@@ -17,17 +18,17 @@
 <header>
     <div class="container">
 
-        <img src ="img/pageLogo.png" alt="placeholder logo" class="logo">
+        <a href="index.html"> <img src="img/pageLogo.png" alt="placeholder logo" class="logo"> </a>
 
 <!-- NAV ELEMENTS -->
 
     <nav>
         <ul class="nav">
-            <li><a href="#" class="navlink"> Home </a> </li>
+            <li><a href="index.html" class="navlink"> Home </a> </li>
             <div class="divider"></div>
-            <li><a href="#" class="navlink"> Study </a> </li>
+            <li><a href="cat.html" class="navlink"> Study </a> </li>
             <div class="divider"></div>
-            <li><a href="#" class="navlink"> Careers </a> </li>
+            <li><a href="career.html" class="navlink"> Careers </a> </li>
             <div class="divider"></div>
             <li><a href="#" class="navlink"> Ask </a> </li>
             <div class="divider"></div>
@@ -36,7 +37,7 @@
 <!-- SEARCH BOX -->
                 <form id="searchInfo" role="search" class="search-box">
                     <div class="search-box__input-container">
-                        <input class="search-box__input" type="search" id="query" name="q" placeholder="Search here..." aria-label="Search through site content">
+                        <input class="search-box__input" type="search" id="search2" placeholder="Search here..." onchange="openPage()">
                         <button><i class="material-icons instant-search__icon">search</i></button>
                     </div>
 
@@ -79,7 +80,7 @@
 
         <form id="homeSearchInfo" role="search" class="home-search-box">
             <div class="home-search-box__input-container">
-                <input class="home-search-box__input" type="search" id="query" name="q" placeholder="Search here..." aria-label="Search through site content">
+                <input class="home-search-box__input" type="search" id="search3" name="q" placeholder="Search here..." aria-label="Search through site content" onchange="openPage2()">
                 <button><i class="material-icons instant-search__icon">search</i></button>
             </div>
 
@@ -89,7 +90,7 @@
     </div>
 
     <div class= "section">
-        <img src = 'img/studyButton.png'>
+        <a href="cat.html"> <img src = 'img/studyButton.png'> </a>
 
 
 
@@ -112,7 +113,7 @@
     </div>
 
     <div class= "section">
-          <img src = 'img/careerButton.png' height = '156px'>
+          <a href="career.html"> <img src ='img/careerButton.png' height ='156px'> </a>
 
     </div>
 
@@ -134,6 +135,7 @@
 
 </body>
 
+<script src="js/search-bar.js"> </script>
 <footer>
 
 </footer>
