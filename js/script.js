@@ -1,14 +1,16 @@
 const toggleBtn1 = document.querySelector("#toggleBtn1");
-const divList1 = document.querySelector(".science");
+const divList1 = document.querySelectorAll(".science");
 
 toggleBtn1.addEventListener('click', () => {
-    if(divList1.style.visibility === 'hidden') {
+  for(var i = 0; i < divList1.length; i++) {
+      if(divList1[i].style.visibility === 'hidden') {
         toggleBtn1.value = "HIDE ENGINEERING";
-        divList1.style.visibility = 'visible';
+        divList1[i].style.visibility = 'visible';
     } else {
         toggleBtn1.value = "SHOW ENGINEERING";
-        divList1.style.visibility = 'hidden';
+        divList1[i].style.visibility = 'hidden';
     }
+  }
 })
 
 const toggleBtn2 = document.querySelector("#toggleBtn2");
