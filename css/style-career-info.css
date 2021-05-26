@@ -216,12 +216,20 @@ p{
     padding: 1px 50px 10px 50px;
     line-height: 25px;
     text-align: justify;
+    color: #4c3b4d;
+}
+
+p.list-title{
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .careerslist{
     list-style-type: none;
     text-align: left;
     line-height: 60px;
+    color: #4c3b4d;
 }
 
 .careers:hover{
@@ -230,7 +238,7 @@ p{
     text-decoration: underline;
 }
 
-hr {
+hr.main {
     border:none;
     height: 20px;
     width: 50%;
@@ -240,3 +248,5 @@ hr {
     box-shadow: 0 10px 10px -10px rgb(160, 160, 160);
     margin: -50px auto 10px; 
   }
+
+  
