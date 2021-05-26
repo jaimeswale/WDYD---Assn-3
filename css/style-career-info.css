@@ -212,12 +212,7 @@ padding: 200px;
     text-align: center;
 }
 
-p{
-    padding: 1px 50px 10px 50px;
-    line-height: 25px;
-    text-align: justify;
-    color: #4c3b4d;
-}
+
 
 p.list-title{
     font-variant: small-caps;
@@ -238,6 +233,11 @@ p.list-title{
     text-decoration: underline;
 }
 
+
+
+
+  /*  --- MAIN TEXT STYLING ---  */
+
 hr.main {
     border:none;
     height: 20px;
@@ -247,6 +247,42 @@ hr.main {
     border-bottom: 1px solid #929292;
     box-shadow: 0 10px 10px -10px rgb(160, 160, 160);
     margin: -50px auto 10px; 
-  }
+}
 
-  
+hr.main2 {
+    border:none;
+    height: 20px;
+    width: 60%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #929292;
+    box-shadow: 0 10px 10px -10px rgb(160, 160, 160);
+    margin: -50px auto 10px; 
+}
+
+p {
+    padding: 1px 50px 10px 50px;
+    line-height: 25px;
+    text-align: justify;
+    color: #4c3b4d;
+}
+
+li.tasks {
+    text-align: left;
+    color: #4c3b4d;
+}
+
+ul.task-title{
+    list-style: none;
+    margin-left: 5vw;
+}
+
+ul.task-title li.tasks::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #4c3b4d; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
