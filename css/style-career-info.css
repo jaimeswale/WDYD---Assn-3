@@ -193,14 +193,7 @@ padding: 200px;
 
 }
 
-.itemheadright{
-    font-family: 'Work Sans', sans-serif;
-    color:#376F4E;
-    font-weight: 600;
-    font-size: 36px;
-    text-align: left;
 
-}
 
 .quote{
     font-family: 'Montserrat', sans-serif;
@@ -214,29 +207,18 @@ padding: 200px;
 
 
 
-p.list-title{
-    font-variant: small-caps;
-    font-size: 30px;
-    font-weight: 500;
-}
 
-.careerslist{
-    list-style-type: none;
-    text-align: left;
-    line-height: 60px;
-    color: #4c3b4d;
-}
 
-.careers:hover{
-    color: #295547;
-    font-weight: bold;
-    text-decoration: underline;
-}
 
 
 
 
   /*  --- MAIN TEXT STYLING ---  */
+p.list-title{
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: 500;
+}
 
 hr.main {
     border:none;
@@ -278,11 +260,71 @@ ul.task-title{
 }
 
 ul.task-title li.tasks::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #4c3b4d; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    content: "\2022";  
+    color: #4c3b4d;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em; 
 }
 
+
+
+/*  --- RIGHT TEXT STYLING ---  */
+
+.itemheadright{
+    font-family: 'Work Sans', sans-serif;
+    color:#376F4E;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+
+}
+
+hr.right {
+    border:none;
+    height: 20px;
+    width: 350px;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #929292;
+    box-shadow: 0 10px 10px -10px rgb(160, 160, 160);
+    margin: -50px auto 10px; 
+}
+
+
+.skills-list{
+    list-style-type: none;
+    text-align: left;
+    line-height: 60px;
+    color: #4c3b4d;
+}
+
+
+.salary-container{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+img.salary-icon {
+    max-width: 100%;
+
+}
+
+.icon {
+    flex-basis: 20%;
+}
+
+.salary {
+    font-size: 30px;
+    padding-left: 10px;
+    color: #4c3b4d;
+}
+
+.exp {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 80px;
+    color: #848484;
+}
