@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    background: white;
+    font-family: 'Work Sans';
+    font-size: 18px;
+}
+/*NAVBAR*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+header {
+    background: #D7EADF;
+
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 30px;
+
+    position: relative;
+
+
+}
+
+.navlink {
+    color: #0D4C38;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    
+}
+
+.navlink:hover{
+    color: #295547;
+    text-decoration: underline;
+    
+}
+
+.navlink::before {
+    content: '';
+    display: block;
+    height: 5px;
+    
+    background-color: #295547;
+
+    position: absolute;
+    width: 0%;
+    top: 0;
+
+    transition: all ease-in-out 200ms;
+}
+
+.navlink:hover::before{
+    width: 100%;
+    top: 0;
+}
+
+/* -- SEARCH BOX CSS -- */
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.search-box {
+    position: relative;
+    max-width: 250px;
+}
+
+.search-box, 
+.search-box__input {
+    font-family: Work Sans;
+    font-weight: 400;
+}
+
+.search-box, 
+.search-box__input * {
+    transition:  background 0.15s, box-shadow 0.15s;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.search-box__input {
+    border-radius: 20px;
+    
+}
+
+.search-box__input-container {
+    border-radius: 5px;
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px;
+    background: #FFFFFF;
+}
+
+.search-box__input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    width:100%;
+    padding: 0 6px;
+    background: transparent;
+}
+
+
+
+/***********MAIN GRID***********/
+
+
+.item1 {grid-area: header;}
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'main main main right right'
+    'footer footer footer footer footer';
+  grid-gap: 30px;
+  background-color: #F2F2F2;
+  padding: 50px 150px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.item1{
+font-family: Montserrat;
+height: 300px;
+color: #376F4E;
+font-weight: 800;
+font-size: 56px;
+background-image: url("img/StudyPathBackdropImage.jpg");
+z-index: 1;
+}
+
+.item1 > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+
+.item4{
+padding: 200px;
+}
+
+.itemhead{
+    font-family: 'Work Sans', sans-serif;
+    color:#376F4E;
+    font-weight: 600;
+    font-size: 36px;
+
+}
+
+
+
+.quote{
+    font-family: 'Montserrat', sans-serif;
+    color:#376F4E;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 0px 150px 50px 150px;
+    line-height: 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+  /*  --- MAIN TEXT STYLING ---  */
+p.list-title{
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+hr.main {
+    border:none;
+    height: 20px;
+    width: 50%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #929292;
+    box-shadow: 0 10px 10px -10px rgb(160, 160, 160);
+    margin: -50px auto 10px; 
+}
+
+hr.main2 {
+    border:none;
+    height: 20px;
+    width: 60%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #929292;
+    box-shadow: 0 10px 10px -10px rgb(160, 160, 160);
+    margin: -50px auto 10px; 
+}
+
+p {
+    padding: 1px 50px 10px 50px;
+    line-height: 25px;
+    text-align: justify;
+    color: #4c3b4d;
+}
+
+li.tasks {
+    text-align: left;
+    color: #4c3b4d;
+}
+
+ul.task-title{
+    list-style: none;
+    margin-left: 5vw;
+}
+
+ul.task-title li.tasks::before {
+    content: "\2022";  
+    color: #4c3b4d;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em; 
+}
+
+
+
+/*  --- RIGHT TEXT STYLING ---  */
+
+.itemheadright{
+    font-family: 'Work Sans', sans-serif;
+    color:#376F4E;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+
+}
+
+hr.right {
+    border:none;
+    height: 20px;
+    width: 350px;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #929292;
+    box-shadow: 0 10px 10px -10px rgb(160, 160, 160);
+    margin: -50px auto 10px; 
+}
+
+
+.skills-list{
+    list-style-type: none;
+    text-align: left;
+    line-height: 60px;
+    color: #4c3b4d;
+}
+
+
+.salary-container{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+img.salary-icon {
+    max-width: 100%;
+
+}
+
+.icon {
+    flex-basis: 20%;
+}
+
+.salary {
+    font-size: 30px;
+    padding-left: 10px;
+    color: #4c3b4d;
+}
+
+.exp {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 80px;
+    color: #848484;
+}
