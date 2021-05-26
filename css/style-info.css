@@ -140,6 +140,9 @@ button {
 
 
 /***********MAIN GRID***********/
+
+
+
 .item1 { grid-area: header; }
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
@@ -183,24 +186,21 @@ z-index: 1;
 padding: 200px;
 }
 
+
+/* --MAIN TEXT STYLING-- */
+
+
+
 .itemhead{
     font-family: 'Work Sans', sans-serif;
     color:#376F4E;
     font-weight: 600;
     font-size: 36px;
-    text-decoration: underline;
+    text-decoration: none;
 
 }
 
-.itemheadright{
-    font-family: 'Work Sans', sans-serif;
-    color:#376F4E;
-    font-weight: 600;
-    font-size: 36px;
-    text-decoration: underline;
-    text-align: left;
 
-}
 
 .quote{
     font-family: 'Montserrat', sans-serif;
@@ -212,20 +212,92 @@ padding: 200px;
     text-align: center;
 }
 
-p{
+
+hr.main {
+    border:none;
+    height: 20px;
+    width: 50%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #929292;
+    box-shadow: 0 10px 10px -10px rgb(160, 160, 160);
+    margin: -50px auto 10px; 
+}
+
+p {
     padding: 1px 50px 10px 50px;
     line-height: 25px;
     text-align: justify;
+    color: #4c3b4d;
 }
 
-.careerslist{
+
+/* --RIGHT TEXT STYLING-- */
+
+.itemheadright{
+    font-family: 'Work Sans', sans-serif;
+    color:#376F4E;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: left;
+
+}
+
+.careers{
+    font-size: 22px;
+}
+
+.careers-list{
     list-style-type: none;
     text-align: left;
     line-height: 60px;
+    color: #4c3b4d;
 }
+
 
 .careers:hover{
     color: #295547;
     font-weight: bold;
     text-decoration: underline;
+    cursor: pointer;
 }
+
+a, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+hr.right {
+    border:none;
+    height: 20px;
+    width: 350px;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #929292;
+    box-shadow: 0 10px 10px -10px rgb(160, 160, 160);
+    margin: -50px auto 10px; 
+}
+
+
+.length-container{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+img.length-icon {
+    max-width: 100%;
+
+}
+
+.icon {
+    flex-basis: 20%;
+}
+
+.length {
+    font-size: 30px;
+    padding-left: 10px;
+    color: #4c3b4d;
+}
+
+
