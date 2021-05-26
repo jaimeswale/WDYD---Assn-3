@@ -328,3 +328,13 @@ img.salary-icon {
     padding-left: 80px;
     color: #848484;
 }
+
+ul.skills-list {
+    list-style: none;
+    margin-left: 3vw;
+}
+
+.skills {
+    font-size: 22px;
+}
+

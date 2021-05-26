@@ -439,7 +439,7 @@
   }
   
   section h1 {
-    width: 400px;
+    width: 100%;
     color: #0D4C38;
     font-size: 20px;
     overflow: hidden;
@@ -623,9 +623,12 @@
   }
   
   .images {
-    width: 100%;
-    height: 50%;
-    text-align: center;
+    height: 157.5px;
+    width: 210px;
+    float: center;
+    margin: 0 auto;
+
+
   }
   
   #science {
@@ -638,5 +641,19 @@
   
   .design {
     display: block;
+    
+  }
+
+
+
+  .box {
+    overflow: hidden;
+    width: 100%;
+  }
+
+
+  .cat-header {
+    float: center;
+    width: 100%;
   }
   
