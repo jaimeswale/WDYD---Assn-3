@@ -1,3 +1,5 @@
+/* SCIENCE / ENGINEERING FILTER BUTTON */
+
 const toggleBtn1 = document.querySelector("#toggleBtn1");
 const divList1 = document.querySelectorAll(".science");
 
@@ -12,6 +14,8 @@ toggleBtn1.addEventListener('click', () => {
     }
   }
 })
+
+/* ARCHITECTURE FILTER BUTTON */
 
 const toggleBtn2 = document.querySelector("#toggleBtn2");
 const divList2 = document.querySelectorAll(".architecture");
@@ -29,6 +33,8 @@ toggleBtn2.addEventListener('click', () => {
 
 })
 
+/* DESIGN FILTER BUTTON */
+
 const toggleBtn3 = document.querySelector("#toggleBtn3");
 const divList3 = document.querySelectorAll(".design");
 
@@ -45,6 +51,8 @@ toggleBtn3.addEventListener('click', () => {
     }
 
 })
+
+/* SEARCH BAR - STUDY & CAREER PATHS */
 
 function search_filter() {
   let input = document.getElementById('query').value

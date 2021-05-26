@@ -1,3 +1,5 @@
+/* SEARCH BAR - SEARCHING FOR NEW PAGE (SEARCH1) */
+
 function openPage () {
   var x = document.getElementById("search2").value;
   
@@ -14,6 +16,8 @@ function openPage () {
     window.open("./info.html")
   }
 }
+
+/* SEARCH BAR - SEARCHING FOR NEW PAGE (SEARCH2) */
 
 function openPage2 () {
   var y = document.getElementById("search3").value;
