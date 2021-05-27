@@ -44,9 +44,7 @@ nav li {
     display: inline-block;
     margin-left: 60px;
     padding-top: 30px;
-
     position: relative;
-
 
 }
 
@@ -107,7 +105,7 @@ button {
 
 .search-box, 
 .search-box__input * {
-    transition:  background 0.15s, box-shadow 0.15s;
+    transition: background 0.15s, box-shadow 0.15s;
 }
 
 .search-box:focus-within {
@@ -199,7 +197,6 @@ padding: 200px;
     text-decoration: none;
 
 }
-
 
 
 .quote{
@@ -301,3 +298,57 @@ img.length-icon {
 }
 
 
+
+
+/* ===============FOOTER================ */
+
+.row{
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.p-footer{
+    text-align: center;
+    color: #4c3b4d;
+    font-size: 22px;
+    padding: 0;
+    margin-left: 0;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 50px 0px 0px;
+}
+
+.social-links li a{
+    color: #295547;
+    display: flex;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+}
+
+.social-links li a:active,
+.social-links li a:hover{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.social-links{
+    padding: 0;
+    margin: 0;
+}
+
+.icons{
+    margin: 0 auto;
+    width: 80%;
+    display: inline-block;
+}
