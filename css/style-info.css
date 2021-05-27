@@ -4,11 +4,27 @@ body {
     font-family: 'Work Sans';
     font-size: 18px;
 }
-/*NAVBAR*/
+
+
+/* -- NAV BAR STYLING -- */
+
+
 .container {
     width: 80%;
     margin: 0 auto;
 
+}
+
+.divider {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border-right: 3px solid #737A84;
+    z-index: 1;
+    color: black;
+    position: relative;
+    top: 10%;
+    left: 2%;
 }
 
 header {
@@ -82,7 +98,11 @@ nav li {
     top: 0;
 }
 
-/* -- SEARCH BOX CSS -- */
+
+
+/* -- SEARCH BOX STYLING -- */
+
+
 
 button {
     background: none;
@@ -137,7 +157,7 @@ button {
 
 
 
-/***********MAIN GRID***********/
+/* -- MAIN GRID STYLING -- */
 
 
 
@@ -300,7 +320,7 @@ img.length-icon {
 
 
 
-/* ===============FOOTER================ */
+/* -- FOOTER STYLING -- */
 
 .row{
     width: 100%;

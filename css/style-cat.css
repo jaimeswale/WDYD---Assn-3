@@ -1,123 +1,6 @@
-#query {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-  }
-  
-  #myUL {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #myUL ul {
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  #myUL li a {
-  
-     /* Add a border to all links */
-    /* Grey background color */
-    text-decoration: none; /* Remove default text underline */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
-  
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
-  
-  #myUL2 {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #myUL2 ul {
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  #myUL2 li a {
-  
-     /* Add a border to all links */
-    /* Grey background color */
-    text-decoration: none; /* Remove default text underline */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
-  
-  #myUL2 li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
-  
-  
-  
-  #myUL3 {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #myUL3 ul {
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  #myUL3 li a {
-  
-     /* Add a border to all links */
-    /* Grey background color */
-    text-decoration: none; /* Remove default text underline */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
-  
-  #myUL3 li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
-  
-  ul {
-    text-align: center;
-    width: 100%;
-    margin-left: -30px;
-  }
-  
-  
-  
-  #myUL4 {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #myUL4 ul {
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  #myUL4 li a {
-  
-     /* Add a border to all links */
-    /* Grey background color */
-    text-decoration: none; /* Remove default text underline */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
-  
-  #myUL4 li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
+/* -- MAIN STYLING -- */
+
+
   
   body {
     margin: 0;
@@ -162,6 +45,8 @@
     float: left;
     padding: 10px 0;
   }
+
+  /* -- NAV STYLING -- */
   
   nav {
     float: right;
@@ -366,6 +251,8 @@
     width:100%;
     padding: 0 6px;
   }
+
+  /* -- GRID STYLING -- */
   
   .gridbox, html {
     height: 100vh;
@@ -656,5 +543,128 @@
   .cat-header {
     float: center;
     width: 100%;
+  }
+
+
+
+  #query {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #myUL li a {
+  
+
+   
+    text-decoration: none; 
+    color: black; 
+    display: block; 
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; 
+  }
+  
+  #myUL2 {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL2 ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #myUL2 li a {
+  
+
+   
+    text-decoration: none; 
+    color: black; 
+    display: block; 
+  }
+  
+  #myUL2 li a:hover:not(.header) {
+    background-color: #eee; 
+  }
+  
+  
+  
+  #myUL3 {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL3 ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #myUL3 li a {
+  
+
+   
+    text-decoration: none; 
+    color: black; 
+    display: block; 
+  }
+  
+  #myUL3 li a:hover:not(.header) {
+    background-color: #eee; 
+  }
+  
+  ul {
+    text-align: center;
+    width: 100%;
+    margin-left: -30px;
+  }
+  
+  
+  
+  #myUL4 {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL4 ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #myUL4 li a {
+  
+
+   
+    text-decoration: none; 
+    color: black; 
+    display: block; 
+  }
+  
+  #myUL4 li a:hover:not(.header) {
+    background-color: #eee; 
   }
   
