@@ -15,6 +15,10 @@ function openPage () {
   if (x === "interaction design" || x === "interaction" || x === "UX" || x === "INTERACTION DESIGN" || x === "INTERACTION" || x === "ux" || x === "Ux" || x === "info") {
     window.open("./info.html")
   }
+
+  if (x === "UX researcher" || x === "") {
+    window.open("./career-info.html")
+  }
 }
 
 /* SEARCH BAR - SEARCHING FOR NEW PAGE (SEARCH2) */
