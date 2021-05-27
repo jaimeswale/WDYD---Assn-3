@@ -43,3 +43,24 @@ function openPage2 () {
     window.open("./career-info.html")
   }
 }
+
+function openPage3 () {
+  var z = document.getElementById("search4").value;
+
+
+  if (z === "categories" || z === "CATEGORIES" || z === "cat" || z === "CAT" || z ==="study path" || z ==="STUDY PATH" || z === "studypath" || z === "STUDYPATH" || z === "study" || z === "STUDY") {
+    window.open("./cat.html");
+  }
+
+  if (z === "careers" || z === "CAREERS" || z === "car" || z === "CAR" || z === "career" || z === "CAREER"){
+    window.open("./career.html")
+  }
+
+  if (z === "interaction design" || z === "interaction" || z === "UX" || z === "INTERACTION DESIGN" || z === "INTERACTION" || z === "ux" || z === "Ux" || z === "info") {
+    window.open("./info.html")
+  }
+
+  if (z === "home" || z === "back" || z === "index" || z === "return" || z === "main page") {
+    window.open("./index.html")
+  }
+}
