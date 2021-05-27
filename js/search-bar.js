@@ -64,3 +64,20 @@ function openPage3 () {
     window.open("./index.html")
   }
 }
+
+function openPage4 () {
+  var a = document.getElementById("search5").value;
+
+  if (a === "categories" || a === "CATEGORIES" || a === "cat" || a === "CAT" || a ==="study path" || a ==="STUDY PATH" || a === "studypath" || a === "STUDYPATH" || a === "study" || a === "STUDY") {
+    window.open("./cat.html");
+  }
+
+  if (a === "careers" || a === "CAREERS" || a === "car" || a === "CAR" || a === "career" || a === "CAREER"){
+    window.open("./career.html")
+  }
+
+ 
+  if (a === "home" || a === "back" || a === "index" || a === "return" || a === "main page") {
+    window.open("./index.html")
+  }
+}
