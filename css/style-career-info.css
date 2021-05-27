@@ -70,6 +70,14 @@ nav li {
     
 }
 
+a.navlink {
+    color: #0D4C38;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+}
+
 .navlink:hover{
     color: #295547;
     text-decoration: underline;

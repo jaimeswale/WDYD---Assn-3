@@ -1,8 +1,11 @@
 body {
     margin: 0;
+    background: white;
     font-family: 'Work Sans';
-
+    font-size: 18px;
 }
+
+/* ----NAVBAR---- */
 
 .divider {
     display: inline-block;
@@ -55,7 +58,6 @@ nav li {
     display: inline-block;
     margin-left: 60px;
     padding-top: 30px;
-
     position: relative;
 
 
