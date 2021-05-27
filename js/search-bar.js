@@ -2,7 +2,7 @@
 
 function openPage () {
   var x = document.getElementById("search2").value;
-  
+
 
   if (x === "categories" || x === "CATEGORIES" || x === "cat" || x === "CAT" || x ==="study path" || x ==="STUDY PATH" || x === "studypath" || x === "STUDYPATH" || x === "study" || x === "STUDY") {
     window.open("./cat.html");
@@ -16,7 +16,7 @@ function openPage () {
     window.open("./info.html")
   }
 
-  if (x === "UX researcher" || x === "") {
+  if (x === "UX researcher" || x === "researcher" || x === "research" || x === "design research" || x === "user researcher") {
     window.open("./career-info.html")
   }
 }
@@ -25,7 +25,7 @@ function openPage () {
 
 function openPage2 () {
   var y = document.getElementById("search3").value;
-  
+
 
   if (y === "categories" || y === "CATEGORIES" || y === "cat" || y === "CAT" || y ==="study path" || y ==="STUDY PATH" || y === "studypath" || y === "STUDYPATH" || y === "study" || y === "STUDY") {
     window.open("./cat.html");
@@ -37,5 +37,9 @@ function openPage2 () {
 
   if (y === "interaction design" || y === "interaction" || y === "UX" || y === "INTERACTION DESIGN" || y === "INTERACTION" || y === "ux" || y === "Ux" || y === "info") {
     window.open("./info.html")
+  }
+
+  if (x === "UX researcher" || x === "researcher" || x === "research" || x === "design research" || x === "user researcher") {
+    window.open("./career-info.html")
   }
 }
