@@ -180,7 +180,6 @@ z-index: 1;
     max-height: 100%;
 }
 
-
 .item4{
 padding: 200px;
 }
@@ -327,3 +326,58 @@ ul.skills-list {
     font-size: 22px;
 }
 
+
+/* FOOTER */
+
+
+
+.row{
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.p-footer{
+    text-align: center;
+    color: #4c3b4d;
+    font-size: 22px;
+    padding: 0;
+    margin-left: 0;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 50px 0px 0px;
+}
+
+.social-links li a{
+    color: #295547;
+    display: flex;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+}
+
+.social-links li a:active,
+.social-links li a:hover{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.social-links{
+    padding: 0;
+    margin: 0;
+}
+
+.icons{
+    margin: 0 auto;
+    width: 80%;
+    display: inline-block;
+}
